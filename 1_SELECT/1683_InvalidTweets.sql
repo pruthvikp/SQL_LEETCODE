@@ -34,7 +34,6 @@ Tweet 1 has length = 14. It is a valid tweet.
 Tweet 2 has length = 32. It is an invalid tweet.
 */
 
-SELECT DISTINCT(author_id) AS id
-FROM Views
-WHERE author_id=viewer_id
-ORDER BY author_id;
+SELECT tweet_id
+FROM Tweets
+WHERE LENGTH(content)>15;
